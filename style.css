@@ -1,0 +1,146 @@
+body {
+    background-color: rgb(29, 26, 44);
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+  
+#spinner {
+    position: relative;
+    max-width: 90px;
+    width: 100%;
+    transform-origin: center;
+    right: 407px;
+    top: 485px;
+    z-index: 7;
+    
+  }
+  
+#spinner2 {
+    position: relative;
+    max-width: 90px;
+    width: 100%;
+    transform-origin: center;
+    right: 168px;
+    top: 488px;
+    z-index: 7;    
+  }
+  
+#car {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    left: 100px;
+    top: 450px;
+    z-index: 7; 
+    filter: drop-shadow(30px 45px 20px rgb(3, 3, 3));
+    filter: drop-shadow(-30px 45px 20px rgb(3, 3, 3));
+    animation: car 5s linear infinite    
+}
+
+@keyframes car {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(1px);
+    }
+    
+    100% {
+        transform: translateY(0px);
+    }
+    
+}
+
+.sky {
+   
+    position: relative;
+    overflow-x: hidden;
+    max-width: 2000px;
+    width: 100%;
+    max-height: 620px;
+    height: 100%;
+    scale: 150%;
+    z-index: 1;
+    bottom: 200px;
+    left: 0px;
+    right: 0px;
+}
+
+.road {
+    height: 120px;
+    width: 180%;
+    display: block;
+    position: relative;
+    bottom: 270px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    filter: sepia(20%);
+    animation: road 20s linear infinite;
+    background-repeat: repeat-x;
+}
+
+@keyframes road {
+
+    100% {
+        transform: translateX(-1000px);
+    }
+    
+}
+
+.tower {
+    height: 200px;
+    width: 110%;
+    position: relative;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 591px;
+    z-index: 2;
+    animation: tower 10s linear infinite;
+}
+
+@keyframes tower {
+
+    100% {
+        transform: translateX(-10px);
+    }
+    
+}
+
+#distance {
+    position: relative;
+    bottom: 450px;
+    left: 800px;
+    color: cornsilk;
+
+    
+}
+
+#speedparameter {
+    position: relative;
+    font-weight: bold;
+    color: cornsilk;
+    font-size: 3.5em;
+    left: 850px;
+    bottom: 520px;
+}
+
+.xlr8-btn {
+    position: relative;
+    bottom: 550px;
+    left: 900px;
+}
+
+.break-btn {
+    position: relative;
+    bottom: 550px;
+    left: 750px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Car game</title> 
+        <link rel="stylesheet" href="https://dl.dropbox.com/s/jj6hlois4612yi0/style.css?dl=0">
+    </head>
+    <body>
+        
+        <header class="topheader">
+            <li class="logobox"><a class="logo" href="https://miami-racer.web.app/">Miami-Racer&trade;</a></li>
+            <li class="shopbox" onclick="comingsoon()"><a class="shop" href="#" onclick="comingsoon()">Shop</a></li>
+            <li class="shopbox" onclick="comingsoon()"><a class="inventory" href="#" onclick="comingsoon()">Inventory</a></li>
+            <li class="shopbox" onclick="comingsoon()"><a class="garage" href="#" onclick="comingsoon()">Garage</a></li>
+            <li class="shopbox" onclick="about()"><a class="about" href="#">About</a></li>
+            <li class="shopbox" ><a class="contact" href="https://www.facebook.com/profile.php?id=100013496771769" target="_blank">Contact</a></li>
+            <div id="coin">100</div>
+        </header>
+        <div class="container">
+      <div id="carContainer">
+        <img id="car" src="https://dl.dropbox.com/s/9ssnklg7mjnqa8o/car%20png.png?dl=0"/>
+        </div>
+        <div id="spinnerContainer">
+            <img id="spinner" src="https://dl.dropbox.com/s/ws3msxwfn6in8ts/car_wheel_PNG23307.png?dl=0"/>
+           <img id="spinner2" src="https://dl.dropbox.com/s/ws3msxwfn6in8ts/car_wheel_PNG23307.png?dl=0"/>
+            
+      </div>
+    </div>
+    <div class="objective">
+        <img id="sky" src="https://dl.dropbox.com/s/1u1h0sjtjqb8pqk/pexels-photo-111755.jpeg?dl=0"/>
+        <img id="road" class="speed1" src="https://dl.dropbox.com/s/5n7i2cwjuzoz711/road2.png?dl=0"/>
+        <img id="tower" src="https://dl.dropbox.com/s/curjhme5s5jdjjm/tower.png?dl=0"/>
+    </div>
+
+    <div id="txtdisplay">
+        <h4 id="distance">N/A</h4>
+        <h5 id="speedparameter">0</h5>
+    </div>
+    
+        <div id="selectors">
+            <ul>
+                <li>
+                    <button class ="button break-btn" onclick="breaks()">break</button>
+                    <button class ="button xlr8-btn" onclick="accelerate()">accelerate</button>                   
+                </li>
+            </ul>
+        </div>
+        <footer class="botfoot">
+            <p>This game website was created by Thanut Promsupsin, using html,javascript and CSS</p>
+            <p>Copyright 2050</p>
+        </footer>
+        <script src="https://dl.dropbox.com/s/mxoe82js6qs43at/index.js?dl=0"></script>
+    </body>
+</html>
+
